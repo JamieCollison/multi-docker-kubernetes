@@ -18,6 +18,7 @@
 /build
 /server/build
 /worker/build
+service-account.json
 
 # misc
 .DS_Store
