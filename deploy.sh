@@ -1,4 +1,4 @@
-docker build -t jcollison/multi-client:latest -t jcollison/muli-client:$SHA -f ./client/Dockerfile ./client
+docker build -t jcollison/multi-client:latest -t jcollison/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t jcollison/multi-server:latest -t jcollison/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t jcollison/multi-worker:latest -t jcollison/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
