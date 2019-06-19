@@ -1,0 +1,20 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: jcollison-dev-tls
+spec:
+  secretName: jcollison-dev
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commanName: jcollison.dev
+  dnsNames:
+    - jcollison.dev
+    - www.jcollison.dev
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - jcollison.dev
+          - www.jcollison.dev
