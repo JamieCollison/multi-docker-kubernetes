@@ -7,7 +7,7 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commanName: jcollison.dev
+  commonName: jcollison.dev
   dnsNames:
     - jcollison.dev
     - www.jcollison.dev
